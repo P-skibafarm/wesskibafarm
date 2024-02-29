@@ -1,0 +1,363 @@
+*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Vollkorn', serif;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.7)),url("images/pivot-sunset.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	}
+	nav{
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav img{
+		width: 200px;
+	}
+.nav-links{
+		flex: 1;
+		text-align: right;
+	}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background:#deb1f0;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 62px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 24px;
+	color: #fff;
+}
+.hero-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 20px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	border: 1px solid #deb1f0;
+	background: #deb1f0;
+	transition: 1s;
+}
+
+@media(max-width: 700px){
+	.text-box h1{
+	font-size: 25px;
+	}
+}
+
+/*---- about ----*/
+
+
+.about{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: #2f3640;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+	padding: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.about-col{
+	flex-basis: 31%;
+	background: #c1d0e8;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+	font-size: 24px;
+}
+.about-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+/*-------------photos-----------*/
+
+.photos{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 36px;
+}
+
+.photo-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.photo-col img{
+	width: 100%;
+	display: block;
+}
+
+
+/*-----------Footer---------*/
+
+.footer{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+h4{
+	font-size: 36px;
+	padding-bottom: 10px;
+	color: #4f4e4f;
+}
+p{
+	font-size: 24px;
+	padding-bottom: 30px;
+	padding-top: 24px;
+}
+img{
+	width: 90%;
+	align: center;
+}
+.photo-button{
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 18px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.photo-button:hover{
+	border: 1px solid #c1d0e8;
+	background: #c1d0e8;
+	transition: 0.5s;
+}
+
+
+/*----------- About Page----------*/
+
+
+.subheader{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.7)),url("images/baler.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	}
+	nav{
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav img{
+		width: 200px;
+	}
+.about-us{
+	width: 90%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.about-collumn{
+	flex-basis: 48%;
+	padding: 30px 2px;	
+}
+.about-collumn img{
+	width: 100%;
+	margin-top: 70px;
+}
+
+
+/*------------- Photos Page --------------*/
+
+.subheader2{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.7)),url("images/sunset1.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	}
+	nav{
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav img{
+		width: 200px;
+	}
+
+.photos2{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.photo-col2{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 32px;
+	position: relative;
+	overflow: hidden;
+}
+.photo-col2 img{
+	width: 100%;
+	display: block;
+}
+
+/*---------- Contact Us --------*/
+
+.subheader3{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4, 9, 30, 0.7)),url("images/skiba.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	}
+	nav{
+		display: flex;
+		padding: 2% 6%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav img{
+		width: 200px;
+	}
+
+.location{
+	width: 80%;
+	margin: auto;
+	padding: 80px 0;
+}
+.location iframe{
+	width: 100%;
+
+}
+
+.contact{
+	align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+
+.contact-col {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 80%;
+  align: center;
+}
+
+.contact-col div h5{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #555;
+	font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.contac{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 10px;
+
+.contact-info{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+.contact-coll{
+	flex-basis: 48%;
+	padding: 30px 2px;	
+}
+.contact-coll img{
+	width: 100%;
+}
